@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .title_item {
+        display: block;
+        padding: 10px;
+      }
+
+      .boxwrap {
+        display: table; /* 핵심! */
+        width: 100%;
+        background-color: #f3f3f3;
+      }
+
+      .boxwrap .box + .box {
+        border-left: 1px solid #ccc;
+      }
+
+      .boxwrap .box {
+        display: table-cell; /* 핵심! */
+        vertical-align: middle;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxwrap">
+	<div class="box">
+		<span class="thum"><img src="http://via.placeholder.com/40x40" alt="샘플이미지"></span>
+		<strong class="title_item">안녕 나는 제목이야</strong>
+		<p class="desc_item">안녕 나는 설명이야.<br>기왕이면 두줄 이상으로 나오게 하기위해 글을 많이 쓸거야!</p>
+	</div>
+	<div class="box">
+		<span class="thum"><img src="http://via.placeholder.com/40x40" alt="샘플이미지"></span>
+		<strong class="title_item">안녕 나는 제목이야</strong>
+		<p class="desc_item">안녕 나는 설명이야.<br>기왕이면 두줄 이상으로 나오게 하기위해 글을 많이 쓸거야!</p>
+	</div>
+	<div class="box">
+		<span class="thum"><img src="http://via.placeholder.com/40x40" alt="샘플이미지"></span>
+		<strong class="title_item">안녕 나는 제목이야</strong>
+		<p class="desc_item">안녕 나는 설명이야.<br>기왕이면 두줄 이상으로 나오게 하기위해 글을 많이 쓸거야!</p>
+	</div>
+</div>
+  </body>
+</html>
